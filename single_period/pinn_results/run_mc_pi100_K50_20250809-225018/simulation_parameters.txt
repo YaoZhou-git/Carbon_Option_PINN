@@ -1,0 +1,19 @@
+
+Monte Carlo Simulation Parameters:
+---------------------------------
+Pi = 100.0
+Beta = 0.5
+Alpha = 1.2
+Risk-free rate (r) = 0.05
+T_asset = 4.0
+Tau = 3.0
+Strike price (K) = 50.0
+
+Simulation Parameters:
+----------------------
+Time steps (dt) = 0.01
+Number of time steps (N) = 300
+Number of simulations = 10000
+Asset price range = 1.0 to 99.0 (n=50)
+Time range = 0.0 to 3.0 (n=25)
+Simulation time = 77.93 seconds

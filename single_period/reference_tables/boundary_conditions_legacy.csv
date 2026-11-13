@@ -1,0 +1,5 @@
+Condition,Value,Expected,Difference
+Boundary (A=0),-0.008840,≈0,0.033617
+Boundary (A=100),46.536579,53.559658,7.023077
+Terminal (t=τ),0.031170,0.000000,0.031170
+Initial (t=0),-0.026396,0,0.026396

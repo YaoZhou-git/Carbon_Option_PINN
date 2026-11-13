@@ -1,0 +1,36 @@
+{
+  "K": 50.0,
+  "r": 0.05,
+  "sigma": 0.2,
+  "maturities_years": [
+    0.5,
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5
+  ],
+  "comparison": "same fixed futures contract; option payoff settled at option expiry",
+  "crossing_short_long_F": 66.486791194172,
+  "crossing_call": 16.144440540337257,
+  "example_table": [
+    {
+      "F": 60.0,
+      "short_tau_0.5": 10.104411854990312,
+      "long_tau_3.5": 11.83487540548184,
+      "long_minus_short": 1.7304635504915282
+    },
+    {
+      "F": 90.0,
+      "short_tau_0.5": 39.012429108288934,
+      "long_tau_3.5": 34.09588358361068,
+      "long_minus_short": -4.916545524678256
+    }
+  ],
+  "independent_gaussian_integration_max_error": 1.4210854715202004e-14,
+  "all_fixed_maturity_curves_increasing": true,
+  "zero_rate_maturity_order_verified": true,
+  "bounds_verified": true,
+  "status": "passed"
+}

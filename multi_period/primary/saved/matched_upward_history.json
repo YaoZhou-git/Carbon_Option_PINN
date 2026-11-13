@@ -1,0 +1,32 @@
+[
+  {
+    "scenario": "upward",
+    "epoch": 1,
+    "PDE_loss": 0.00044644917943514884
+  },
+  {
+    "scenario": "upward",
+    "epoch": 500,
+    "PDE_loss": 5.01801296195481e-05
+  },
+  {
+    "scenario": "upward",
+    "epoch": 1000,
+    "PDE_loss": 2.5292807549703866e-05
+  },
+  {
+    "scenario": "upward",
+    "epoch": 1500,
+    "PDE_loss": 2.9143378924345598e-05
+  },
+  {
+    "scenario": "upward",
+    "epoch": 2000,
+    "PDE_loss": 2.6091049221577123e-05
+  },
+  {
+    "scenario": "upward",
+    "epoch": 2500,
+    "PDE_loss": 2.0293342458899133e-05
+  }
+]

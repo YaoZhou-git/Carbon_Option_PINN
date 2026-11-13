@@ -1,0 +1,104 @@
+{
+  "checked_at_UTC": "2026-11-11T07:15:32.215612+00:00",
+  "scope": "Checkpoint loading and reference-state prices for the two variance-matched models.",
+  "matched_checkpoint_checks": [
+    {
+      "curve": "flat",
+      "checkpoint": "multi_period/models/matched/N4_matched_flat.pt",
+      "checkpoint_sha256": "f4e20227245ab5a81ad4fa20ee2d3c1ac473e5d535721c0ef1c5333781a62d3d",
+      "checkpoint_hash_matches_results": true,
+      "cfg_beta": [
+        1.581932368559615,
+        1.581932368559615,
+        1.581932368559615,
+        1.581932368559615
+      ],
+      "buffer_beta": [
+        1.5819324254989624,
+        1.5819324254989624,
+        1.5819324254989624,
+        1.5819324254989624
+      ],
+      "target_beta": 1.581932368559615,
+      "cfg_beta_max_abs_difference": 0.0,
+      "buffer_beta_max_abs_difference": 5.6939347459206147e-08,
+      "beta_checks_pass": true,
+      "warm_start_sha256": "d2c02cf15c8d581ec03493856e9e239f53ebfa349d9e998719d5216fa9b777df",
+      "warm_start_hash_matches_original": true,
+      "single_verified_quotes": [
+        60.0,
+        60.0,
+        60.0,
+        60.0
+      ],
+      "valuation_time": 0.0,
+      "tau": 3.0,
+      "independent_cpu_price": 14.725403487682343,
+      "saved_CSV_price": 14.725400507450104,
+      "independent_minus_saved_price": 2.9802322387695312e-06,
+      "price_reproduction_tolerance": 2e-05,
+      "single_point_price_reproduction_pass": true,
+      "saved_reference_price_no_reintegration": 14.571845890486031,
+      "independent_minus_saved_reference": 0.15355759719631124,
+      "independent_relative_error_percent": 1.0537964671762627,
+      "saved_relative_error_percent": 1.0537760151878108,
+      "CSV_and_JSON_numerics_match_exactly": true,
+      "additional_training_epochs_recorded": 2500,
+      "training_seconds_recorded": 162.8027749999892,
+      "single_point_CPU_inference_seconds": 0.0014486000873148441,
+      "device": "cpu",
+      "dtype": "float32"
+    },
+    {
+      "curve": "upward",
+      "checkpoint": "multi_period/models/matched/N4_matched_upward.pt",
+      "checkpoint_sha256": "0b1fc52c4e77408f5658bb73a8b74ddd80dadf17769bdc9e715732535bdace73",
+      "checkpoint_hash_matches_results": true,
+      "cfg_beta": [
+        2.767042725627787,
+        2.767042725627787,
+        2.767042725627787,
+        2.767042725627787
+      ],
+      "buffer_beta": [
+        2.767042636871338,
+        2.767042636871338,
+        2.767042636871338,
+        2.767042636871338
+      ],
+      "target_beta": 2.767042725627787,
+      "cfg_beta_max_abs_difference": 0.0,
+      "buffer_beta_max_abs_difference": 8.875644930128601e-08,
+      "beta_checks_pass": true,
+      "warm_start_sha256": "d2c02cf15c8d581ec03493856e9e239f53ebfa349d9e998719d5216fa9b777df",
+      "warm_start_hash_matches_original": true,
+      "single_verified_quotes": [
+        60.0,
+        65.0,
+        70.0,
+        75.0
+      ],
+      "valuation_time": 0.0,
+      "tau": 3.0,
+      "independent_cpu_price": 13.760392367839813,
+      "saved_CSV_price": 13.760392367839813,
+      "independent_minus_saved_price": 0.0,
+      "price_reproduction_tolerance": 2e-05,
+      "single_point_price_reproduction_pass": true,
+      "saved_reference_price_no_reintegration": 13.340157346614122,
+      "independent_minus_saved_reference": 0.42023502122569134,
+      "independent_relative_error_percent": 3.150150409075584,
+      "saved_relative_error_percent": 3.150150409075584,
+      "CSV_and_JSON_numerics_match_exactly": true,
+      "additional_training_epochs_recorded": 2500,
+      "training_seconds_recorded": 178.299292499898,
+      "single_point_CPU_inference_seconds": 0.00089230015873909,
+      "device": "cpu",
+      "dtype": "float32"
+    }
+  ],
+  "saved_training_seconds_total": 341.1020674998872,
+  "upward_error_3_15_percent_retained": true,
+  "interpretation": "The upward matched-state price has approximately 3.15% error versus the existing saved reference; verification reproduces this result and does not treat it as an accurate reference price.",
+  "all_checks_pass": true
+}

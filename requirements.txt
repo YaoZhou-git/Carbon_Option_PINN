@@ -1,0 +1,11 @@
+# Core numerical and PINN environment.
+# Verified locally with Python 3.10.16 and torch 2.7.0+cu128.
+# Install the appropriate PyTorch CPU/CUDA wheel for your machine if necessary.
+numpy==2.2.5
+scipy==1.15.2
+pandas==2.2.3
+matplotlib==3.10.1
+torch==2.7.0
+openpyxl==3.1.5
+tqdm==4.67.1
+Pillow==11.0.0

@@ -1,0 +1,145 @@
+{
+  "run_started_UTC": "2026-11-11T07:09:57.886225+00:00",
+  "run_finished_UTC": "2026-11-11T07:09:57.928224+00:00",
+  "purpose": "Four-factor PINN prices and automatic quote sensitivities.",
+  "checkpoint": "multi_period/models/baseline/N4_factor_pinn.pt",
+  "checkpoint_sha256": "d2c02cf15c8d581ec03493856e9e239f53ebfa349d9e998719d5216fa9b777df",
+  "checkpoint_sha256_after": "d2c02cf15c8d581ec03493856e9e239f53ebfa349d9e998719d5216fa9b777df",
+  "checkpoint_metadata": {
+    "N": 4,
+    "parameters": {
+      "pi": 100.0,
+      "r": 0.05,
+      "K": 50.0,
+      "T": [
+        4.0,
+        8.0,
+        12.0,
+        16.0
+      ],
+      "alpha": [
+        1.2,
+        1.2,
+        1.2,
+        1.2
+      ],
+      "beta": [
+        0.8,
+        0.8,
+        0.8,
+        0.8
+      ],
+      "kappa": [
+        0.8187307530779818,
+        0.8187307530779818,
+        0.8187307530779818
+      ],
+      "rho": 0.3,
+      "tau": 3.0
+    },
+    "epochs": 10000,
+    "batch": 2048,
+    "device": "cuda"
+  },
+  "environment": {
+    "python": "3.10.16 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 16:19:12) [MSC v.1929 64 bit (AMD64)]",
+    "torch": "2.7.0+cu128",
+    "numpy": "2.2.5",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "device": "cpu",
+    "dtype": "float32",
+    "torch_threads": 4
+  },
+  "timing": {
+    "checkpoint_load_and_model_setup_seconds": 0.004787900019437075,
+    "warmup_points": 3,
+    "timed_forward_batch_points": 96,
+    "single_forward_batch_seconds": 0.0018365001305937767,
+    "single_forward_per_point_seconds": 1.9130209693685174e-05,
+    "single_autograd_batch_seconds": 0.023749500047415495,
+    "interpretation": "Single small CPU batch after one warmup; not a throughput benchmark."
+  },
+  "coordinate_chain": "C_Xi = C_yi/pi; C_A1=C_X1; C_Aj=C_Xj-kappa_(j-1)*C_X(j-1).",
+  "chain_vs_direct_quote_autograd_max_abs_difference": 7.390975953480705e-08,
+  "coverage": {
+    "all_evaluated_y_min": 0.01,
+    "all_evaluated_y_max": 0.75,
+    "all_evaluated_inside_random_factor_interior": true,
+    "three_curves_y": [
+      [
+        0.23157116111490816,
+        0.20438077407660546,
+        0.13625384938440363,
+        0.2
+      ],
+      [
+        0.10876154815321094,
+        0.10876154815321094,
+        0.10876154815321094,
+        0.6
+      ],
+      [
+        0.06782501049931185,
+        0.07688847284541275,
+        0.08595193519151366,
+        0.75
+      ]
+    ],
+    "training_random_y_range": [
+      0.002,
+      0.998
+    ],
+    "training_face_values": [
+      0.0001,
+      0.9999
+    ],
+    "training_t_range": "[0, .999*tau); exact t=0 is not guaranteed sampled",
+    "interpretation": "Within declared factor-domain support, not proof of realized point density or accuracy."
+  },
+  "baseline_delta_acceptance": {
+    "max_abs_error_threshold": 0.002,
+    "all_four_signs_agree": true,
+    "last_two_relative_error_threshold": 0.05,
+    "last_two_relative_errors": [
+      0.01978384542506475,
+      0.01189892900532713
+    ],
+    "max_abs_error": 0.0011479941270460259,
+    "passes_requested_criterion": true
+  },
+  "scan_summary": [
+    {
+      "period": 2,
+      "point_count": 31,
+      "price_MAE": 0.01633441163587916,
+      "price_max_abs_error": 0.06743670964079129,
+      "secant_max_abs_error": 0.006397610936927145,
+      "secant_sign_disagreement_count": 1,
+      "small_reference_secant_count_abs_lt_001": 1,
+      "PINN_autograd_delta_min": -0.173371926386024,
+      "PINN_autograd_delta_max": 0.003840600664864857
+    },
+    {
+      "period": 3,
+      "point_count": 31,
+      "price_MAE": 0.009760306536185329,
+      "price_max_abs_error": 0.02649875084526343,
+      "secant_max_abs_error": 0.002014069109419994,
+      "secant_sign_disagreement_count": 0,
+      "small_reference_secant_count_abs_lt_001": 5,
+      "PINN_autograd_delta_min": -0.08824009272451577,
+      "PINN_autograd_delta_max": 0.03882211779596334
+    },
+    {
+      "period": 4,
+      "point_count": 31,
+      "price_MAE": 0.01051685849833089,
+      "price_max_abs_error": 0.01974963142402686,
+      "secant_max_abs_error": 0.0015810415127001445,
+      "secant_sign_disagreement_count": 1,
+      "small_reference_secant_count_abs_lt_001": 9,
+      "PINN_autograd_delta_min": -0.05145272752375746,
+      "PINN_autograd_delta_max": 0.029956342128018953
+    }
+  ]
+}

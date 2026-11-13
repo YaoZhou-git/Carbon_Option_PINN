@@ -1,0 +1,13 @@
+-r requirements.txt
+nbformat==5.11.1
+nbclient==0.11.0
+ipykernel==6.29.5
+IPython==8.36.0
+jupyter-core==5.7.2
+jupyter-client==8.6.3
+# Optional execution utility, not run during release preparation.
+nbconvert>=7.16,<8
+seaborn==0.13.2
+scikit-learn==1.6.1
+plotly==6.5.0
+statsmodels==0.14.5

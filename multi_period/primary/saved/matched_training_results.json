@@ -1,0 +1,28 @@
+[
+  {
+    "curve": "flat",
+    "beta_multiplier": 1.9774154606995185,
+    "beta": 1.581932368559615,
+    "PINN_price": 14.725400507450104,
+    "Sobol_reference": 14.571845890486031,
+    "difference": 0.15355461696407247,
+    "relative_error_percent": 1.0537760151878108,
+    "training_seconds": 162.8027749999892,
+    "additional_epochs": 2500,
+    "checkpoint": "N4_matched_flat.pt",
+    "checkpoint_sha256": "f4e20227245ab5a81ad4fa20ee2d3c1ac473e5d535721c0ef1c5333781a62d3d"
+  },
+  {
+    "curve": "upward",
+    "beta_multiplier": 3.458803407034734,
+    "beta": 2.767042725627787,
+    "PINN_price": 13.760392367839813,
+    "Sobol_reference": 13.340157346614122,
+    "difference": 0.42023502122569134,
+    "relative_error_percent": 3.150150409075584,
+    "training_seconds": 178.299292499898,
+    "additional_epochs": 2500,
+    "checkpoint": "N4_matched_upward.pt",
+    "checkpoint_sha256": "0b1fc52c4e77408f5658bb73a8b74ddd80dadf17769bdc9e715732535bdace73"
+  }
+]

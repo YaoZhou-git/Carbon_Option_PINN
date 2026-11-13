@@ -1,0 +1,58 @@
+{
+  "base": {
+    "pi": 100.0,
+    "r": 0.05,
+    "K": 50.0,
+    "T": [
+      4.0,
+      8.0,
+      12.0,
+      16.0
+    ],
+    "alpha": [
+      1.2,
+      1.2,
+      1.2,
+      1.2
+    ],
+    "beta": [
+      0.8,
+      0.8,
+      0.8,
+      0.8
+    ],
+    "kappa": [
+      0.8187307530779818,
+      0.8187307530779818,
+      0.8187307530779818
+    ],
+    "rho": 0.3,
+    "tau": 3.0
+  },
+  "curve_scenarios": {
+    "下倾": [
+      60.0,
+      45.0,
+      30.0,
+      20.0
+    ],
+    "平坦": [
+      60.0,
+      60.0,
+      60.0,
+      60.0
+    ],
+    "上倾": [
+      60.0,
+      65.0,
+      70.0,
+      75.0
+    ]
+  },
+  "seed_rule": "731001+101*r; independently scrambled Sobol; common random numbers across scenarios",
+  "legacy_factor_model_sha256": "4e3b379b8bb589bdc9a14cb19da5d8de4ab80e551238a3b107b4f573e8493ba9",
+  "software": {
+    "python": "3.12.4 | packaged by Anaconda, Inc. | (main, Jun 18 2024, 15:03:56) [MSC v.1929 64 bit (AMD64)]",
+    "numpy": "1.26.4"
+  }
+}

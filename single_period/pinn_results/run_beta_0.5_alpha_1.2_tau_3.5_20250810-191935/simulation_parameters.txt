@@ -1,0 +1,17 @@
+
+Model Parameters:
+----------------
+Pi = 100.0
+Beta = 0.5
+Alpha = 1.2
+Risk-free rate (r) = 0.05
+T = 4.0
+Tau = 3.5
+Strike price (K) = 50.0
+
+Training Parameters:
+-------------------
+Points per dimension = 150
+Epochs = 15001
+Learning rate = 0.001
+Training time = 582.89 seconds

@@ -1,0 +1,14 @@
+{
+  "seconds_by_N": {
+    "1": 230.51084423065186,
+    "2": 363.93723154067993,
+    "3": 509.3726873397827,
+    "4": 687.7143940925598
+  },
+  "device": "cuda",
+  "epochs": 10000,
+  "batch": 2048,
+  "data_labels_used": false,
+  "terminal_condition": "hard enforced",
+  "input": "bounded recursive factors X/pi and valuation time"
+}

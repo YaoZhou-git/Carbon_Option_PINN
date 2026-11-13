@@ -1,0 +1,49 @@
+{
+  "displayed_N": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "architecture": "3 hidden Tanh layers, width 64; smooth trial function plus learned PDE correction",
+  "fixed_maturity": 3,
+  "time_domain": [
+    0,
+    3
+  ],
+  "factors_domain": [
+    0,
+    100
+  ],
+  "terminal_condition": "hard imposed to float precision",
+  "MC_used": false,
+  "max_displayed_bound_shortfall": 0,
+  "max_independent_slice_absolute_difference": 0.046563554280265596,
+  "reference_prices": [
+    {
+      "N": 1,
+      "PINN_C": 17.065967559814453,
+      "Gaussian_C": 17.065034064970476,
+      "absolute_difference": 0.0009334948439772006
+    },
+    {
+      "N": 2,
+      "PINN_C": 15.886073112487793,
+      "Gaussian_C": 15.886145690968583,
+      "absolute_difference": 7.257848078978668e-05
+    },
+    {
+      "N": 3,
+      "PINN_C": 16.237150192260742,
+      "Gaussian_C": 16.2246806314838,
+      "absolute_difference": 0.012469560776942501
+    },
+    {
+      "N": 4,
+      "PINN_C": 16.349590301513672,
+      "Gaussian_C": 16.3434976505389,
+      "absolute_difference": 0.0060926509747716295
+    }
+  ],
+  "scope": "Fixed-maturity price profile."
+}

@@ -1,0 +1,22 @@
+{
+  "sample": "All common positive closing prices in calendar 2021; no factor-sign filtering or clipping",
+  "n": 256,
+  "start": "2021-01-04",
+  "end": "2021-12-30",
+  "files": {
+    "2022": {
+      "file": "EUA FUTURE DEC 22价格历史_20260126_1449.xlsx",
+      "sha256": "7bdd7c5116fc980b172f6e4066d0f1dbe8de2ef7f72e151fb6849f02c4589e31",
+      "instrument_id": "FEUAZ2^2"
+    },
+    "2023": {
+      "file": "EUA FUTURE DEC 23价格历史_20260126_1449.xlsx",
+      "sha256": "97c078196dd0db88cff09fb66ed8c42500cd20bb9348d4ce0665456e41ebe03c",
+      "instrument_id": "FEUAZ3^2"
+    }
+  },
+  "date_column": "A",
+  "close_column": "B",
+  "sheet": "Sheet 1",
+  "year_fraction_basis": "ACT/365.25"
+}

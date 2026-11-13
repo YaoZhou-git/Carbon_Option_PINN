@@ -1,0 +1,24 @@
+{
+  "source_fit_key": "indexed_scenario_separate_beta_binary_clock",
+  "stability": {
+    "relative_hessian_frobenius_difference": 5.5282729145009475e-08,
+    "max_relative_HAC_SE_difference_by_bandwidth": {
+      "4": 1.61322930015629e-06,
+      "8": 1.6185121643212098e-06,
+      "12": 1.6196997317375784e-06
+    },
+    "passed": true
+  },
+  "beta2_over_beta1_HAC8": {
+    "estimate": 12.830908262656259,
+    "log_ratio_se": 0.5875180634899668,
+    "wald95": [
+      4.056590017422829,
+      40.58389093736722
+    ]
+  },
+  "alpha_interval_HAC8": [
+    0.8590632851770619,
+    5.025555492836462
+  ]
+}
